@@ -6,16 +6,23 @@
   <title>Login</title>
 
   <script src="https://cdn.tailwindcss.com"></script>
-  <!-- <link rel="stylesheet" href="output.css"> -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+  <style>
+    @media screen and (max-width: 420px) and (min-width:220px){
+      #section {
+        width: 88%;
+    }
+}
+  </style>
 </head>
 <body class="box-border">
   <main class="w-full lg:h-screen md:h-screen	flex justify-center items-center bg-cover bg-center" style="background-image: url(images/bg.jpg);">
-    <section class="w-3/4 grid xl:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 shadow-lg">
-      <article class="bg-white bg-opacity-20  backdrop-blur-xl rounded-l-lg">
+    <section id="section" class="w-3/4 grid xl:grid-cols-2 md:grid-cols-2 sm:grid-cols-1 shadow-lg">
+      <article class="bg-white bg-opacity-20  backdrop-blur-xl">
         <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
         <lottie-player class=" lg:w-full lg:h-full md:w-full md:h-full " src="https://assets10.lottiefiles.com/packages/lf20_q5pk6p1k.json"  background="transparent"  speed="1"  loop  autoplay></lottie-player>
       </article>
-      <article class="bg-white bg-opacity-90  p-12 relative rounded-r-lg" >
+      <article class="bg-white bg-opacity-90  p-12 relative" >
         <header class="flex justify-between items-center mb-8">
           <h1 class="ffont-medium text-2xl text-gray-600 ">Login</h1>
           <a href="#" class="text-xs text-slate-400">Don`t have an account ?</a>
@@ -25,7 +32,7 @@
           <input type="text" placeholder="Email" class="mb-2 border-b border-solid	py-3.5 border-slate-300 bg-transparent	">
           <input type="password" placeholder="Passwourd" class="mb-2 border-b border-solid	py-3.5 border-slate-300 bg-transparent	">
           <!-- <input type="submit" value="Login" class="mt-8 bg-slate-600 w-1/4 px-3.5 py-1 text-white rounded-full border border-solid border-slate-300"> -->
-          <button class="mt-12 w-full px-6 py-3 rounded-xl bg-indigo-500 transition hover:bg-indigo-600 focus:bg-sky-600 active:bg-sky-800">
+          <button class="mt-12 w-full px-6 py-3 rounded-xl bg-indigo-500 transition hover:bg-indigo-600">
             <span class="font-semibold text-white text-lg">Login</span>
         </button>
         </form>
